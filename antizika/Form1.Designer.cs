@@ -29,30 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
+            btn_CalcularHash_Click = new Button();
             button2 = new Button();
             button3 = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btn_CalcularHash_Click
             // 
-            button1.BackColor = Color.SlateGray;
-            button1.Cursor = Cursors.Hand;
-            button1.Font = new Font("OCR-A BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.MintCream;
-            button1.Location = new Point(64, 110);
-            button1.Name = "button1";
-            button1.Size = new Size(175, 142);
-            button1.TabIndex = 0;
-            button1.Text = "Calcular Hash";
-            button1.UseVisualStyleBackColor = false;
+            btn_CalcularHash_Click.BackColor = Color.SlateGray;
+            btn_CalcularHash_Click.Cursor = Cursors.Hand;
+            btn_CalcularHash_Click.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_CalcularHash_Click.ForeColor = Color.MintCream;
+            btn_CalcularHash_Click.Location = new Point(64, 110);
+            btn_CalcularHash_Click.Name = "btn_CalcularHash_Click";
+            btn_CalcularHash_Click.Size = new Size(175, 142);
+            btn_CalcularHash_Click.TabIndex = 0;
+            btn_CalcularHash_Click.Text = "Calcular Hash";
+            btn_CalcularHash_Click.UseVisualStyleBackColor = false;
+            btn_CalcularHash_Click.Click += btn_CalcularHash_Click_Click;
             // 
             // button2
             // 
             button2.BackColor = Color.SlateGray;
             button2.Cursor = Cursors.Hand;
-            button2.Font = new Font("OCR-A BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.MintCream;
             button2.Location = new Point(559, 110);
             button2.Name = "button2";
@@ -65,7 +66,7 @@
             // 
             button3.BackColor = Color.SlateGray;
             button3.Cursor = Cursors.Hand;
-            button3.Font = new Font("OCR-A BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.MintCream;
             button3.Location = new Point(310, 92);
             button3.Name = "button3";
@@ -76,7 +77,7 @@
             // 
             // label1
             // 
-            label1.Font = new Font("OCR-A BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(232, 371);
             label1.Name = "label1";
             label1.Size = new Size(332, 36);
@@ -93,7 +94,7 @@
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_CalcularHash_Click);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
@@ -104,7 +105,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btn_CalcularHash_Click;
         private Button button2;
         private Button button3;
         private Label label1;
